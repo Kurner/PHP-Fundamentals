@@ -120,11 +120,11 @@
        // VOLUME CONE
        function calculate_cone_volume($rayon, $hauteur)
        {
-            echo "<p>Le volume du cone est de " . ($rayon * $rayon * (3.14) * $hauteur * (1/3)) . '</p>';
+            echo "<p>Le volume du cone est de " . ($rayon * $rayon * (3.14) * $hauteur * (1/3)) . ' cm<sup>3</sup></p>';
        }
 
        calculate_cone_volume(5, 2); 
     ?>
-    
+
 </body>
 </html>
