@@ -8,6 +8,7 @@
 </head>
 <body>
     <?php 
+        // ROOM STATE
         $room_is_filthy = true;
         
         $possible_states = ['healt hazard', 'filthy', 'dirty', 'clean', 'immaculate'];
@@ -24,6 +25,7 @@
             echo "<br>Nothing to do, room is neat.";
         }
 
+        // TIME
         $now = time();
         $morningStart = "05:00:00";
         $morningEnd = "09:00:00";
@@ -64,6 +66,7 @@
         echo (date("h:i:s A", $now));      
     ?>
 
+    <!-- AGE CHECK -->
     <form action="drill_exercices.php" method="get">
     <p>Votre âge : <input type="text" name="age" /></p>
     <p><input type="submit" value="OK"></p>
@@ -94,6 +97,7 @@
         }
     ?>
 
+    <!-- GENDER CHECK -->
     <form action="drill_exercices.php" method="get">
             <input type="radio" name="Genre" value="Femme">Une femme
             <input type="radio" name="Genre" value="Homme">Un homme
@@ -110,21 +114,13 @@
            echo "<p>Vous etes un homme ! HOURRA !</p>";
        }
 
-       $note = 3;
+       // NOTE CHECK
+       $note = 5;
 
        switch ($note){
            case 0 :
-                echo "This work is really bad. What a dumb kid !";
-                break;
-
             case 1 :
-                echo "This work is really bad. What a dumb kid !";
-                break;
-
             case 2 :
-                echo "This work is really bad. What a dumb kid !";
-                break;
-
             case 3 :
                 echo "This work is really bad. What a dumb kid !";
                 break;
@@ -135,14 +131,11 @@
        };
 
        // TERNARY OPERATORS 
-
        $gender = "F";
 
-       $hello = ($gender == 'M') ? "HELLO MY DUDE !": "HELLO MY GARLS !";
+       $hello = ($gender == 'M') ? "<p>HELLO MY DUDE !</p>": "<p>HELLO MY GARLS !</p>";
 
-       echo $hello;
-
-              
+       echo $hello;      
     ?>
 </body>
 </html>

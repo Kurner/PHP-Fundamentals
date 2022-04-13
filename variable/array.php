@@ -114,7 +114,7 @@
             echo $j . " ";
         }
 
-        $countries = array('BE' => 'Belgique', 'FR' => 'France', 'DE' => 'Allemagne','IT' => 'Italie', 'PT' => 'Portugal', 'ES' => 'Espagne', 'HR' => 'Croatie', 'RU' => 'Russie', 'UA' => 'Ukraine', 'CH' => 'Suisse');
+    $countries = array('BE' => 'Belgique', 'FR' => 'France', 'DE' => 'Allemagne','IT' => 'Italie', 'PT' => 'Portugal', 'ES' => 'Espagne', 'HR' => 'Croatie', 'RU' => 'Russie', 'UA' => 'Ukraine', 'CH' => 'Suisse');
     ?>
 
     <p>SELECT BOX</p>
